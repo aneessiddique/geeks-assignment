@@ -1,0 +1,216 @@
+{
+	"info": {
+		"_postman_id": "6a47cb1c-cc39-4465-aaac-28e5cc985776",
+		"name": "Country crud apis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000/api/countries",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5OGIwZTM2Ny0yOGNhLTRkYmQtYWZiNS00ZGI4ODNhZjE4YmYiLCJqdGkiOiJmZGVhYjRjNWM2MDZjYTUyNGQ0MTg1ZTU0ZDEwMjk0NWVmNmRmNzA1ZDRmYmNjNjNkNjgwODg4ZGE5NjM3ODRlOTU1Y2IyMTFmODcxMDExYiIsImlhdCI6MTY3ODg2Mjk1My41OTA1ODEsIm5iZiI6MTY3ODg2Mjk1My41OTA1OTksImV4cCI6MTcxMDQ4NTM1My41Njg0MzIsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.jZaWI_b7PwEsmcPTsMlkaLKMCfoPOSAGgF8_4hfjpyayod79PtFjyszwTMinEucAKyP3EyI_tVL2KSiCu1fDv0vrs_PDSvbHH2isEy5tOzmZ7mcyz-dNCJy2ZrxLwO8RB7tox6bVDRBagMyIh7P1gdDTrR2F-M3lLBMVAT1qgHXMtLL2LTPc7c_sPmnJXzP0Ub-Nhh15dE_8D9q0WhqQZv4nAufHtIEg494WH_n5T_E999UhKRzM2tXJeA4hXZijTf5cHvDG6ONZJ1fTLQFq0YWz5SGJHiR9GGGuN6ye2BR3Pbxm2IYCUm08MqK4-qk4hEs_XmxcXLfPp9w6DOr6QYF1F2b88Rv_k9jvpGtY49b-lEC6hEmz4wq9-oRPTg02AmiM_FICc9FiKBxco3bYriqxNDHEAWuvFRT57ryZ-zCLJhCy_-fLbQ9AKZyRNi7Ro99ZyRYtH7vtIbKuSXmZmiAnhCfw-TNzx19JfKtNFhFhRj4JFHppfmy4J3yweGX_br9W3qn4lcQPj4hZ4ClB78wu1YPSRmtmbXka4l623E1it9aSQNPibbLVwSNjnEbv_oNMg896bi4xo3rMK6AcSDbs1E6lsI_Y53bPl77v0yqEoRhHu3ubGFQVFUxypO-lUpig9Fn6RxIXCoaUshjIIHEF2LzI78RhxjxRS1YcLiQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Karachi",
+							"type": "default"
+						},
+						{
+							"key": "country_id",
+							"value": "2",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/cities",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"cities"
+					]
+				},
+				"description": "create (Store) Country"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/countries/2/edit",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5OGIwZTM2Ny0yOGNhLTRkYmQtYWZiNS00ZGI4ODNhZjE4YmYiLCJqdGkiOiJjYWJmMGVhMDAxMjUwMzJjMjRhYzRiYmUyYzUxOTk5ODdjMmI4MjBhNzNjYmUxNzNkNzNmNTEzYWU0N2ZiOWY0NTA0NmVkZGMyNjJhZjU3MyIsImlhdCI6MTY3ODg2MDA3NS40MDkyMjcsIm5iZiI6MTY3ODg2MDA3NS40MDkyMzEsImV4cCI6MTcxMDQ4MjQ3NS4zOTUxMjEsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.Hj0bcvVVYf-MyhhJxQqmNx9bnbZNB_al1NbKLGeOMENgJzYpUv37HIcAxTQZrqwFczFqKXr4RR0W6JRnfnOPWIFbMYI39gWt-tWRWZ2osNUrFSM6Kt8RajV8vcNgfOHYjFLntnXW-h3mNTqCMK4vSWOqV7An7U1KYEgslSx2PILQbgIdWPEOUahYifDkDmxmwlfA8yZ0mVZCMT7a9-9EDM2joeP6qynxU6K_h2ZwKYRBTSTRL2V-xTr9O9Bty0mbg8FK2Dl4bvvKi7Ihal0esldii172FYSZcH3mIGka-H6ho_v61itmS_poYuD0ZDJONZvmPfZoAdaBnjtNoBidIIlSK0HG2No8hy3HBUDEkCmfWzdyFvCPDVRfoV09SQjHEWLPl9iy9KKIWRwuAY8nYO6mVY_u5ZNUIAC-BcVtIpYU_ayYz8xR4QbdkPOA_SAyAIJGuHEEQYm3AZrtnTBC0j8KVB62gB9_Gp4XcI_G_rBIkuwl6AvzN6_nG6AUK9_e_knqvqCeV1ieo_xCit07n4xbi-BNFRBSlEXI1sXBc1oUIdHGqwsdtCPYivYBmGkD99gn-5-zpyutuv6kfk4H76lfQtpXeLH_8A0FPUWtveEL5NNCvgnD5dv6KwgFVO44LX5plC4O663wBSWCC39-60o_ydiXAUeIi0ih4981aQM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/countries/2/edit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"countries",
+						"2",
+						"edit"
+					]
+				},
+				"description": "Read Country record"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/countries/1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5OGIwZTM2Ny0yOGNhLTRkYmQtYWZiNS00ZGI4ODNhZjE4YmYiLCJqdGkiOiJjYWJmMGVhMDAxMjUwMzJjMjRhYzRiYmUyYzUxOTk5ODdjMmI4MjBhNzNjYmUxNzNkNzNmNTEzYWU0N2ZiOWY0NTA0NmVkZGMyNjJhZjU3MyIsImlhdCI6MTY3ODg2MDA3NS40MDkyMjcsIm5iZiI6MTY3ODg2MDA3NS40MDkyMzEsImV4cCI6MTcxMDQ4MjQ3NS4zOTUxMjEsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.Hj0bcvVVYf-MyhhJxQqmNx9bnbZNB_al1NbKLGeOMENgJzYpUv37HIcAxTQZrqwFczFqKXr4RR0W6JRnfnOPWIFbMYI39gWt-tWRWZ2osNUrFSM6Kt8RajV8vcNgfOHYjFLntnXW-h3mNTqCMK4vSWOqV7An7U1KYEgslSx2PILQbgIdWPEOUahYifDkDmxmwlfA8yZ0mVZCMT7a9-9EDM2joeP6qynxU6K_h2ZwKYRBTSTRL2V-xTr9O9Bty0mbg8FK2Dl4bvvKi7Ihal0esldii172FYSZcH3mIGka-H6ho_v61itmS_poYuD0ZDJONZvmPfZoAdaBnjtNoBidIIlSK0HG2No8hy3HBUDEkCmfWzdyFvCPDVRfoV09SQjHEWLPl9iy9KKIWRwuAY8nYO6mVY_u5ZNUIAC-BcVtIpYU_ayYz8xR4QbdkPOA_SAyAIJGuHEEQYm3AZrtnTBC0j8KVB62gB9_Gp4XcI_G_rBIkuwl6AvzN6_nG6AUK9_e_knqvqCeV1ieo_xCit07n4xbi-BNFRBSlEXI1sXBc1oUIdHGqwsdtCPYivYBmGkD99gn-5-zpyutuv6kfk4H76lfQtpXeLH_8A0FPUWtveEL5NNCvgnD5dv6KwgFVO44LX5plC4O663wBSWCC39-60o_ydiXAUeIi0ih4981aQM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Pakistani",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/countries/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"countries",
+						"1"
+					]
+				},
+				"description": "Update country"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/countries/2",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5OGIwZTM2Ny0yOGNhLTRkYmQtYWZiNS00ZGI4ODNhZjE4YmYiLCJqdGkiOiJjYWJmMGVhMDAxMjUwMzJjMjRhYzRiYmUyYzUxOTk5ODdjMmI4MjBhNzNjYmUxNzNkNzNmNTEzYWU0N2ZiOWY0NTA0NmVkZGMyNjJhZjU3MyIsImlhdCI6MTY3ODg2MDA3NS40MDkyMjcsIm5iZiI6MTY3ODg2MDA3NS40MDkyMzEsImV4cCI6MTcxMDQ4MjQ3NS4zOTUxMjEsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.Hj0bcvVVYf-MyhhJxQqmNx9bnbZNB_al1NbKLGeOMENgJzYpUv37HIcAxTQZrqwFczFqKXr4RR0W6JRnfnOPWIFbMYI39gWt-tWRWZ2osNUrFSM6Kt8RajV8vcNgfOHYjFLntnXW-h3mNTqCMK4vSWOqV7An7U1KYEgslSx2PILQbgIdWPEOUahYifDkDmxmwlfA8yZ0mVZCMT7a9-9EDM2joeP6qynxU6K_h2ZwKYRBTSTRL2V-xTr9O9Bty0mbg8FK2Dl4bvvKi7Ihal0esldii172FYSZcH3mIGka-H6ho_v61itmS_poYuD0ZDJONZvmPfZoAdaBnjtNoBidIIlSK0HG2No8hy3HBUDEkCmfWzdyFvCPDVRfoV09SQjHEWLPl9iy9KKIWRwuAY8nYO6mVY_u5ZNUIAC-BcVtIpYU_ayYz8xR4QbdkPOA_SAyAIJGuHEEQYm3AZrtnTBC0j8KVB62gB9_Gp4XcI_G_rBIkuwl6AvzN6_nG6AUK9_e_knqvqCeV1ieo_xCit07n4xbi-BNFRBSlEXI1sXBc1oUIdHGqwsdtCPYivYBmGkD99gn-5-zpyutuv6kfk4H76lfQtpXeLH_8A0FPUWtveEL5NNCvgnD5dv6KwgFVO44LX5plC4O663wBSWCC39-60o_ydiXAUeIi0ih4981aQM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/countries/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"countries",
+						"2"
+					]
+				},
+				"description": "Get Countries Cities"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/countries/2",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5OGIwZTM2Ny0yOGNhLTRkYmQtYWZiNS00ZGI4ODNhZjE4YmYiLCJqdGkiOiJmZGVhYjRjNWM2MDZjYTUyNGQ0MTg1ZTU0ZDEwMjk0NWVmNmRmNzA1ZDRmYmNjNjNkNjgwODg4ZGE5NjM3ODRlOTU1Y2IyMTFmODcxMDExYiIsImlhdCI6MTY3ODg2Mjk1My41OTA1ODEsIm5iZiI6MTY3ODg2Mjk1My41OTA1OTksImV4cCI6MTcxMDQ4NTM1My41Njg0MzIsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.jZaWI_b7PwEsmcPTsMlkaLKMCfoPOSAGgF8_4hfjpyayod79PtFjyszwTMinEucAKyP3EyI_tVL2KSiCu1fDv0vrs_PDSvbHH2isEy5tOzmZ7mcyz-dNCJy2ZrxLwO8RB7tox6bVDRBagMyIh7P1gdDTrR2F-M3lLBMVAT1qgHXMtLL2LTPc7c_sPmnJXzP0Ub-Nhh15dE_8D9q0WhqQZv4nAufHtIEg494WH_n5T_E999UhKRzM2tXJeA4hXZijTf5cHvDG6ONZJ1fTLQFq0YWz5SGJHiR9GGGuN6ye2BR3Pbxm2IYCUm08MqK4-qk4hEs_XmxcXLfPp9w6DOr6QYF1F2b88Rv_k9jvpGtY49b-lEC6hEmz4wq9-oRPTg02AmiM_FICc9FiKBxco3bYriqxNDHEAWuvFRT57ryZ-zCLJhCy_-fLbQ9AKZyRNi7Ro99ZyRYtH7vtIbKuSXmZmiAnhCfw-TNzx19JfKtNFhFhRj4JFHppfmy4J3yweGX_br9W3qn4lcQPj4hZ4ClB78wu1YPSRmtmbXka4l623E1it9aSQNPibbLVwSNjnEbv_oNMg896bi4xo3rMK6AcSDbs1E6lsI_Y53bPl77v0yqEoRhHu3ubGFQVFUxypO-lUpig9Fn6RxIXCoaUshjIIHEF2LzI78RhxjxRS1YcLiQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Pakistan",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/countries/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"countries",
+						"2"
+					]
+				},
+				"description": "country update api"
+			},
+			"response": []
+		}
+	]
+}

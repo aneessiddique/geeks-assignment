@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "c9216ed4-ac55-46bb-8c31-7e333c09fc75",
+		"name": "City crud apis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000/api/cities",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5OGIwZTM2Ny0yOGNhLTRkYmQtYWZiNS00ZGI4ODNhZjE4YmYiLCJqdGkiOiJjYWJmMGVhMDAxMjUwMzJjMjRhYzRiYmUyYzUxOTk5ODdjMmI4MjBhNzNjYmUxNzNkNzNmNTEzYWU0N2ZiOWY0NTA0NmVkZGMyNjJhZjU3MyIsImlhdCI6MTY3ODg2MDA3NS40MDkyMjcsIm5iZiI6MTY3ODg2MDA3NS40MDkyMzEsImV4cCI6MTcxMDQ4MjQ3NS4zOTUxMjEsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.Hj0bcvVVYf-MyhhJxQqmNx9bnbZNB_al1NbKLGeOMENgJzYpUv37HIcAxTQZrqwFczFqKXr4RR0W6JRnfnOPWIFbMYI39gWt-tWRWZ2osNUrFSM6Kt8RajV8vcNgfOHYjFLntnXW-h3mNTqCMK4vSWOqV7An7U1KYEgslSx2PILQbgIdWPEOUahYifDkDmxmwlfA8yZ0mVZCMT7a9-9EDM2joeP6qynxU6K_h2ZwKYRBTSTRL2V-xTr9O9Bty0mbg8FK2Dl4bvvKi7Ihal0esldii172FYSZcH3mIGka-H6ho_v61itmS_poYuD0ZDJONZvmPfZoAdaBnjtNoBidIIlSK0HG2No8hy3HBUDEkCmfWzdyFvCPDVRfoV09SQjHEWLPl9iy9KKIWRwuAY8nYO6mVY_u5ZNUIAC-BcVtIpYU_ayYz8xR4QbdkPOA_SAyAIJGuHEEQYm3AZrtnTBC0j8KVB62gB9_Gp4XcI_G_rBIkuwl6AvzN6_nG6AUK9_e_knqvqCeV1ieo_xCit07n4xbi-BNFRBSlEXI1sXBc1oUIdHGqwsdtCPYivYBmGkD99gn-5-zpyutuv6kfk4H76lfQtpXeLH_8A0FPUWtveEL5NNCvgnD5dv6KwgFVO44LX5plC4O663wBSWCC39-60o_ydiXAUeIi0ih4981aQM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Length",
+						"value": "0",
+						"type": "default",
+						"disabled": true
+					},
+					{
+						"key": "Host",
+						"value": "<calculated when request is sent>",
+						"type": "default",
+						"disabled": true
+					},
+					{
+						"key": "User-Agent",
+						"value": "",
+						"type": "default",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Lahore",
+							"type": "default"
+						},
+						{
+							"key": "country_id",
+							"value": "2",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/cities",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"cities"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Phone Cover",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

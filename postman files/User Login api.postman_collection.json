@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "6e564988-4be4-45cc-a07c-789c45f76083",
+		"name": "User Login api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000/api/login",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjA3ODZjZDY1MDk1ZThlMWZmZjEyNzNmM2MxOTM3MzFiYTliNWJkYzhhMjIwOTlkOTMwMDJkYThkNzFiYWMzZjBkMzJkMjU2NTE4YTk5MGM4In0.eyJhdWQiOiIwIiwianRpIjoiMDc4NmNkNjUwOTVlOGUxZmZmMTI3M2YzYzE5MzczMWJhOWI1YmRjOGEyMjA5OWQ5MzAwMmRhOGQ3MWJhYzNmMGQzMmQyNTY1MThhOTkwYzgiLCJpYXQiOjE2NjU2ODU1MDMsIm5iZiI6MTY2NTY4NTUwMywiZXhwIjoxNjk3MjIxNTAzLCJzdWIiOiI1OTk4MTMiLCJzY29wZXMiOltdfQ.pLsUk3W6-apTFB9HHOzmbgugJmooJo6KUHPraDnU3HV2FYXvVVTtHXbwRFohnMo9woz8kQ9nEgfkrBcheR787TFrc_MSP6Efa94gwQ_DjOrf_WOCZPeqeky1apunD2mXCNDnOuVhDCc39alSTfYxrmOhNXTGB3YxRzZBwHZ7HE6e3wqMYNkpOmMU3iYmXPaAOrDmplW8z3lwcQ3HLWYEDDjloQ3tepvzkUfFwhbj2fheYdI8VEYL0ldHipYGKbRjtFBB8E4n3AJY3Buvw6jBk2xIlFEfgF7KFEQsdTrBcXsVBGErIZtUo5EDCZrFHz1aNAx4cKa-k1zLwia-n4G5oZptGXJjNNlkzdoFv3fQcpGsrLM4TcZslOnH-y7PX-UDA9XRJw8tTjP0xjyhFgXp3K2iiZgZ0Od3GlU3xpjs0QxFSMo5HP2wRMIe8Q_IEYc7yiIXrtiDCxJQ_lWM1G7keaZ4mSp9lxWb61oKXBZ9Tr4G9yTME66sKPUU5xmOsoIhCHi51EM1PN4Br6Eovzaa4ewV_Zb0nMMdVdNMu_04-H42KnC9pqYvJUAmJgIEk1LaDUMmsWiQ6Vq2LbnVJPJR7K_Vlo2NdXrqPVxaLS1C9RdXkck5KnOJdTcbW29SS7P6CU_K6vsb2Pjuwh9IkGc-cSO7ywaVeWDEeSudnIaEuWI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "yanderson@example.org",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					],
+					"query": [
+						{
+							"key": "from_date",
+							"value": "2022-08-26",
+							"disabled": true
+						},
+						{
+							"key": "to_date",
+							"value": "2022-08-26",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
