@@ -5,6 +5,7 @@
 4. run migration and seeder
 5. Default user password is "password"
 6. Folder created in directory with name "Postman Files" have all apis details.
+7. Login and generate Access token then use bearer token in all APIs
 
 
 
